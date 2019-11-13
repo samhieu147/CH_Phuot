@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:background="@drawable/bgr"
+    tools:context=".activity.AddTheLoai_Activity">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="309dp"
+        android:layout_height="136dp"
+        android:src="@drawable/logooo" />
+
+    <EditText
+        android:id="@+id/edMaTL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="MÃ THỂ LOẠI" />
+
+    <EditText
+        android:id="@+id/edTenTL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="TÊN THỂ LOẠI" />
+
+    <EditText
+        android:id="@+id/edmoTa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="MÔ TẢ" />
+
+    <EditText
+        android:id="@+id/edVitri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="VỊ TRÍ" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:onClick="addNewTL"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="THÊM" />
+
+        <Button
+            android:onClick="huyTL"
+            android:layout_margin="20dp"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:text="HỦY" />
+    </LinearLayout>
+
+    <Button
+        android:onClick="listTL"
+        android:layout_gravity="center"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:text="DANH SÁCH THỂ LOẠI" />
+</LinearLayout>
